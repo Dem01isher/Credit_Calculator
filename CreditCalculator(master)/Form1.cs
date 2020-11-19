@@ -26,6 +26,31 @@ namespace CreditCalculator
 
         }
 
-        
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            lbl_income.Text = trackBar1.Value.ToString();
+            
+            
+        }
+
+        private void trackBar2_Scroll(object sender, EventArgs e)
+        {
+            lbl_spend.Text = trackBar2.Value.ToString();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_spend_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
