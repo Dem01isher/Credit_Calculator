@@ -73,7 +73,6 @@ namespace CreditCalculator
             this.groupBox1.Size = new System.Drawing.Size(544, 338);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // lbl_income
             // 
@@ -148,6 +147,7 @@ namespace CreditCalculator
             this.button1.TabIndex = 4;
             this.button1.Text = "Оформити";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // trackBar2
             // 

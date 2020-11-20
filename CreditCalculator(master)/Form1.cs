@@ -16,9 +16,20 @@ namespace CreditCalculator
         private int trackValue;
         private bool blockRecursion1 = false;
         private int trackValue1;
+        public int MaxResult, ChooseResult1, ChooseResult2;
         public Form1()
         {
             InitializeComponent();
+            if(ChooseResult2 >= ChooseResult1)
+            {
+                label3.Text = "Нажаль за даних умов ми не можемо надати кредит";
+                label3.Visible = true;
+            }
+            else
+            {
+                label3.Visible = false;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -71,6 +82,12 @@ namespace CreditCalculator
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
