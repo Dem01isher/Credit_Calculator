@@ -39,7 +39,7 @@ namespace CreditCalculator
             // 
             this.button1.Location = new System.Drawing.Point(47, 152);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(84, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,7 +49,7 @@ namespace CreditCalculator
             // 
             this.button2.Location = new System.Drawing.Point(144, 152);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(84, 30);
             this.button2.TabIndex = 1;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
@@ -65,11 +65,11 @@ namespace CreditCalculator
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 46);
+            this.label1.Location = new System.Drawing.Point(55, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(148, 17);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Введіть суму кредиту";
             // 
             // Form2
             // 

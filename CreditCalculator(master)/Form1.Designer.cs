@@ -143,7 +143,7 @@ namespace CreditCalculator
             // 
             this.button1.Location = new System.Drawing.Point(425, 278);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 26);
+            this.button1.Size = new System.Drawing.Size(100, 30);
             this.button1.TabIndex = 4;
             this.button1.Text = "Оформити";
             this.button1.UseVisualStyleBackColor = true;

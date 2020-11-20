@@ -16,7 +16,8 @@ namespace CreditCalculator
         private int trackValue;
         private bool blockRecursion1 = false;
         private int trackValue1;
-        public int MaxResult, ChooseResult1, ChooseResult2;
+        public int ChooseResult1, ChooseResult2;
+        public static int MaxResult;
         public Form1()
         {
             InitializeComponent();
@@ -57,6 +58,19 @@ namespace CreditCalculator
 
                 blockRecursion = false;
                 lbl_income.Text = trackBar1.Value.ToString();
+                ChooseResult1 = trackBar1.Value;
+                ChooseResult2 = trackBar2.Value;
+                MaxResult = (ChooseResult1 * ChooseResult2) / 100;
+                if (ChooseResult2 >= ChooseResult1)
+                {
+                    label3.Text = "Нажаль за даних умов ми не можемо надати кредит";
+                    label4.Visible = false;
+                }
+                else
+                {
+                    label3.Text = $"Макс. сума кредиту\n {MaxResult}";
+                    label4.Visible = true;
+                }
             }
         }
 
@@ -76,6 +90,19 @@ namespace CreditCalculator
 
                 blockRecursion1 = false;
                 lbl_spend.Text = trackBar2.Value.ToString();
+                ChooseResult1 = trackBar1.Value;
+                ChooseResult2 = trackBar2.Value;
+                MaxResult = (ChooseResult1 * ChooseResult2) / 100;
+                if (ChooseResult2 >= ChooseResult1)
+                {
+                    label3.Text = "Нажаль за даних умов ми не можемо надати кредит";
+                    label4.Visible = false;
+                }
+                else
+                {
+                    label3.Text = $"Макс. сума кредиту\n {MaxResult}";
+                    label4.Visible = true;
+                }
             }
         }
 

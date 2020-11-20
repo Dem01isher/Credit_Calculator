@@ -12,6 +12,8 @@ namespace CreditCalculator
 {
     public partial class Form2 : Form
     {
+        int toCredit = 0;
+        Form1 form1 = new Form1();
         public Form2()
         {
             InitializeComponent();
@@ -19,6 +21,16 @@ namespace CreditCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            toCredit = Convert.ToInt32(textBox1.Text);
+            if (toCredit <= Form1.MaxResult)
+            {
+                MessageBox.Show($"Кредит оформлено на суму {toCredit} грн." );
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show($"Завелика сума для кредиту.");
+            }
             
         }
 
