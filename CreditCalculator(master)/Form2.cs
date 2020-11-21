@@ -16,9 +16,9 @@ namespace CreditCalculator
     {
         int toCredit = 0;
         Form1 form1 = new Form1();
-        string yourDatabase = "credit_application";
-        string yourUid = "root";
-        string yourPassword = "root";
+        string yourDatabase = "sql7377932";
+        string yourUid = "sql7377932";
+        string yourPassword = "cAXpGNatbB";
         string connectionString;
         MySqlConnection connection;
         public Form2()
@@ -26,7 +26,7 @@ namespace CreditCalculator
             InitializeComponent();
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.SelectedIndex = 0;
-            connectionString = $"Server=127.0.0.1;Uid={yourUid};Database={yourDatabase};Pwd={yourPassword};";
+            connectionString = $"Server=sql7.freemysqlhosting.net;Uid={yourUid};Database={yourDatabase};Pwd={yourPassword};";
         }
 
         private void button1_Click(object sender, EventArgs e)
