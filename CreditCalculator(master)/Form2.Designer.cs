@@ -76,9 +76,9 @@ namespace CreditCalculator
             // comboBox1
             // 
             this.comboBox1.Items.AddRange(new object[] {
-            "12 місяців",
-            "24 місяців",
-            "48 місяців"});
+            "12 ",
+            "24 ",
+            "48 "});
             this.comboBox1.Location = new System.Drawing.Point(181, 105);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(100, 24);
