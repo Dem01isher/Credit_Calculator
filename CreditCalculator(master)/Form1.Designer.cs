@@ -33,9 +33,7 @@ namespace CreditCalculator
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbl_income = new System.Windows.Forms.Label();
             this.lbl_spend = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -60,9 +58,7 @@ namespace CreditCalculator
             // 
             this.groupBox1.Controls.Add(this.lbl_income);
             this.groupBox1.Controls.Add(this.lbl_spend);
-            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
@@ -79,9 +75,8 @@ namespace CreditCalculator
             this.lbl_income.AutoSize = true;
             this.lbl_income.Location = new System.Drawing.Point(359, 38);
             this.lbl_income.Name = "lbl_income";
-            this.lbl_income.Size = new System.Drawing.Size(32, 17);
+            this.lbl_income.Size = new System.Drawing.Size(0, 17);
             this.lbl_income.TabIndex = 11;
-            this.lbl_income.Text = "500";
             // 
             // lbl_spend
             // 
@@ -93,14 +88,6 @@ namespace CreditCalculator
             this.lbl_spend.Text = "500";
             this.lbl_spend.Click += new System.EventHandler(this.lbl_spend_Click);
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(42, 249);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 9;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -109,16 +96,6 @@ namespace CreditCalculator
             this.label5.Size = new System.Drawing.Size(173, 17);
             this.label5.TabIndex = 8;
             this.label5.Text = "Мої витрати в місяць, грн";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(382, 149);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Щомісячний платіж, грн";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -198,9 +175,7 @@ namespace CreditCalculator
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;

@@ -23,12 +23,14 @@ namespace CreditCalculator
             InitializeComponent();
             if(ChooseResult2 >= ChooseResult1)
             {
-                label3.Text = "Нажаль за даних умов ми не можемо надати кредит";
-                label3.Visible = true;
+                label3.Text = "Нажаль за даних \nумов ми не можемо \nнадати кредит";
+                button1.Visible = false;
+                
             }
             else
             {
-                label3.Visible = false;
+                label3.Visible = true;
+                button1.Visible = true;
             }
 
         }
@@ -64,12 +66,14 @@ namespace CreditCalculator
                 if (ChooseResult2 >= ChooseResult1)
                 {
                     label3.Text = "Нажаль за даних умов ми не можемо надати кредит";
-                    label4.Visible = false;
+                    
+                    button1.Visible = false;
                 }
                 else
                 {
                     label3.Text = $"Макс. сума кредиту\n {MaxResult}";
-                    label4.Visible = true;
+                    
+                    button1.Visible = true;
                 }
             }
         }
@@ -95,13 +99,15 @@ namespace CreditCalculator
                 MaxResult = (ChooseResult1 * ChooseResult2) / 100;
                 if (ChooseResult2 >= ChooseResult1)
                 {
-                    label3.Text = "Нажаль за даних умов ми не можемо надати кредит";
-                    label4.Visible = false;
+                    label3.Text = "Нажаль за даних умов \nми не можемо надати кредит";
+                    
+                    button1.Visible = false;
                 }
                 else
                 {
                     label3.Text = $"Макс. сума кредиту\n {MaxResult}";
-                    label4.Visible = true;
+                    
+                    button1.Visible = true;
                 }
             }
         }
@@ -118,6 +124,11 @@ namespace CreditCalculator
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
